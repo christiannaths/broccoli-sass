@@ -29,7 +29,7 @@ SassCompiler.prototype.build = function() {
   var sassOptions = {
     file: path.join(this.inputPaths[0], this.inputFile),
     includePaths: this.inputPaths,
-
+    importer: this.options.importer,
     imagePath: this.options.imagePath,
     outputStyle: this.options.outputStyle,
     precision: this.options.precision,
